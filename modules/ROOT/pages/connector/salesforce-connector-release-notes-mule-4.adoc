@@ -25,7 +25,7 @@ Added support for Salesforce v43.
 
 === Known Issues
 
-* Salesforce connector throws InvalidSessionID error after the connection is being idle for 2+ hours. 
+* Salesforce connector throws InvalidSessionID error after the connection is being idle for 2+ hours. It occurs when the oauth-user-pass-connection type of configuration is used.
 
 == 9.3.3
 
