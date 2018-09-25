@@ -4,7 +4,30 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: mule, compression, module, release notes
 
-*May 2018*
+== 2.0.0
+
+*September 2018* 
+
+=== New Features and Enhancements
+
+To provide a better experience using this module, this module adds a new API 
+to support archiver compression formats with a new set of operations. This 
+provides the same experience to compress and decompress files for each of the 
+available formats without losing any of the features that the algorithm for 
+the format provides. 
+
+This change enables the possibility of adding more compression formats in a simple manner.
+
+This version now supports the more widely used ZIP compression format, and continues
+support for the GZIP format.
+
+=== Fixed Issues
+
+[%header,cols="15a,85a"]
+|===
+|Issue |Description
+| https://www.mulesoft.org/jira/browse/MULE-15082[MULE-15082] | Upgrade commons-lang3 to 3.7
+|===
 
 == 1.0.0
 
@@ -17,4 +40,4 @@ This module provides functionality for compressing and uncompressing data.
 == See Also
 
 * https://forums.mulesoft.com[MuleSoft Forum]
-* https://support.mulesoft.com[Contact MuleSoft Support]
+* https://support.mulesoft.com/s/knowledge[Knowledge Base Articles]
