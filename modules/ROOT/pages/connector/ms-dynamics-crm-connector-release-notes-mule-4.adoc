@@ -4,11 +4,39 @@ include::_attributes.adoc[]
 endif::[]
 :keywords: release notes, dynamics, crm, connector
 
-*April 2018*
+* September 27, 2018*
 
 _Select_
 
 The Microsoft Dynamics Customer Relationship Management (CRM) connector lets you access the Microsoft Dynamics CRM SOAP Organization Service. You can add this connector to an Anypoint Studio flow and in Design Center.
+
+== 3.1.0
+
+=== Compatibility
+
+[%header, cols=","]
+|===
+|Application/Service|Version
+|Mule Runtime|Mule Enterprise Edition 4.0.0 and 4.1.0
+|Anypoint Studio|Only works with Studio 7.0.0 and newer
+|Dynamics CRM version|2013, 2015, 2016
+|===
+
+=== Features
+
+In the 3.1.0 we have implemented the following features:
+ * Kerberos connection provider
+ * Deleted Object trigger - Queries the audit table to retrieve all deleted objects of specified type
+ * New Object trigger - Queries the specified field type table to retrieve all of the new created objects
+ * Modified Object trigger - Queries the specified field type table to retrieve all of the fresh modified objects
+
+=== Fixed in this release
+
+* WinOpportunity request was not supported. Fixed by adding specific handling of the request.
+
+=== Known Issues
+
+None.
 
 == 3.0.0
 
